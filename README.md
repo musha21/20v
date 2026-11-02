@@ -23,6 +23,15 @@ npm install
 npm run dev
 ```
 
+## Production deploy (required)
+
+Vite bakes `VITE_*` values into the JS bundle at **build time**. `.env` is gitignored, so hosts will crash with `supabaseUrl is required` unless you set these on the platform **before** building:
+
+- `VITE_SUPABASE_URL=https://hnebtobuesfzzqgzntit.supabase.co`
+- `VITE_SUPABASE_ANON_KEY=` your publishable or anon key
+
+Then trigger a fresh build/redeploy (Vercel/Netlify/CI → Environment Variables → Production → Redeploy). Updating only the GitHub code without host env will still fail.
+
 ## PWA install
 
 - Works on **HTTPS** production hosts or `localhost`.
