@@ -49,7 +49,7 @@ export default function PlayerDashboard() {
     <div className="space-y-6">
       <PageHeader title="Ground overview" subtitle="View-only cash summary for village players" />
 
-      <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-6">
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-3">
         <SummaryCard title="Opening balance" value={formatLKR(summary.openingBalance)} icon={PiggyBank} tone="light" />
         <SummaryCard title="Today's collection" value={formatLKR(summary.todayCollection)} icon={Wallet} />
         <SummaryCard title="Total ground collection" value={formatLKR(summary.totalCollection)} icon={TrendingUp} tone="light" />

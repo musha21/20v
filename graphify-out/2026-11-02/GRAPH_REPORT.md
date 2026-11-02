@@ -1,12 +1,12 @@
 # Graph Report - 20  (2026-11-02)
 
 ## Corpus Check
-- 82 files · ~20,771 words
+- 85 files · ~21,446 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 3 file(s) not represented in the graph (top: .example 1, (none) 1, .css 1)
 
 ## Summary
-- 324 nodes · 654 edges · 46 communities (13 shown, 33 thin omitted)
+- 330 nodes · 677 edges · 46 communities (13 shown, 33 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
@@ -19,16 +19,16 @@
 - App.jsx
 - package.json
 - LoadingSpinner
-- AdminExpenses
+- admin/Expenses.jsx
 - Changelog
 - Supabase
 - Changelog
 - Writing Guidelines for Postgres References
-- Collections.jsx
+- AdminCollections
 - Section Definitions
 - Village Volleyball Ground Management System
 - Supabase Postgres Best Practices
-- AdminPlayers
+- Players.jsx
 - advanced-full-text-search.md
 - advanced-jsonb-indexing.md
 - conn-idle-timeout.md
@@ -65,8 +65,8 @@
 
 ## God Nodes (most connected - your core abstractions)
 1. `LoadingSpinner()` - 24 edges
-2. `App()` - 23 edges
-3. `useAuth()` - 22 edges
+2. `useAuth()` - 24 edges
+3. `App()` - 23 edges
 4. `PageHeader()` - 19 edges
 5. `formatLKR()` - 19 edges
 6. `formatDate()` - 19 edges
@@ -76,6 +76,8 @@
 10. `EmptyState()` - 15 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `App()` --calls--> `AdminCalendar()`  [EXTRACTED]
+  src/App.jsx → src/pages/admin/Calendar.jsx
 - `App()` --calls--> `AdminCollections()`  [EXTRACTED]
   src/App.jsx → src/pages/admin/Collections.jsx
 - `App()` --calls--> `AdminDashboard()`  [EXTRACTED]
@@ -84,8 +86,6 @@
   src/App.jsx → src/pages/admin/Expenses.jsx
 - `App()` --calls--> `AdminPlayers()`  [EXTRACTED]
   src/App.jsx → src/pages/admin/Players.jsx
-- `App()` --calls--> `AdminSponsors()`  [EXTRACTED]
-  src/App.jsx → src/pages/admin/Sponsors.jsx
 
 ## Import Cycles
 - None detected.
@@ -93,20 +93,20 @@
 ## Communities (46 total, 33 thin omitted)
 
 ### Community 0 - "App.jsx"
-Cohesion: 0.12
-Nodes (27): react-router-dom, App(), RedirectIfAuth(), RequireAdmin(), RequireAuth(), RequirePlayer(), AuthContext, AuthProvider() (+19 more)
+Cohesion: 0.13
+Nodes (24): react-router-dom, App(), RedirectIfAuth(), RequireAdmin(), RequireAuth(), RequirePlayer(), AuthContext, AuthProvider() (+16 more)
 
 ### Community 1 - "package.json"
 Cohesion: 0.06
-Nodes (34): dependencies, lucide-react, react, react-dom, react-router-dom, recharts, @supabase/supabase-js, devDependencies (+26 more)
+Nodes (33): dependencies, lucide-react, react, react-dom, react-router-dom, recharts, @supabase/supabase-js, devDependencies (+25 more)
 
 ### Community 2 - "LoadingSpinner"
-Cohesion: 0.23
-Nodes (20): lucide-react, react, DaySummaryPanel(), EmptyState(), LoadingSpinner(), buildCells(), MonthCalendar(), PageHeader() (+12 more)
+Cohesion: 0.21
+Nodes (21): lucide-react, react, DaySummaryPanel(), EmptyState(), LoadingSpinner(), buildCells(), MonthCalendar(), PageHeader() (+13 more)
 
-### Community 3 - "AdminExpenses"
-Cohesion: 0.17
-Nodes (19): supabase, AdminExpenses(), confirmDelete(), handleSubmit(), load(), AdminSponsors(), confirmDelete(), handleSubmit() (+11 more)
+### Community 3 - "admin/Expenses.jsx"
+Cohesion: 0.18
+Nodes (18): ConfirmDialog(), AdminExpenses(), confirmDelete(), handleSubmit(), load(), emptyForm, AdminSponsors(), confirmDelete() (+10 more)
 
 ### Community 4 - "Changelog"
 Cohesion: 0.10
@@ -124,9 +124,9 @@ Nodes (16): [1.2.0](https://github.com/supabase/agent-skills/compare/v1.1.1...v1
 Cohesion: 0.12
 Nodes (15): 1. Concrete Transformation Patterns, 2. Error-First Structure, 3. Quantified Impact, 4. Self-Contained Examples, 5. Semantic Naming, Code Example Standards, Comments, Impact Level Guidelines (+7 more)
 
-### Community 8 - "Collections.jsx"
-Cohesion: 0.31
-Nodes (10): ConfirmDialog(), AdminCollections(), confirmDelete(), handleSubmit(), load(), emptyForm, deleteCollection(), listCollections() (+2 more)
+### Community 8 - "AdminCollections"
+Cohesion: 0.16
+Nodes (18): @supabase/supabase-js, supabase, AdminCalendar(), AdminCollections(), confirmDelete(), handleSubmit(), load(), PlayerCalendar() (+10 more)
 
 ### Community 9 - "Section Definitions"
 Cohesion: 0.20
@@ -140,9 +140,9 @@ Nodes (6): Financial rules, First admin, Login model, Setup, Stack, Village Voll
 Cohesion: 0.33
 Nodes (5): How to Use, References, Rule Categories by Priority, Supabase Postgres Best Practices, When to Apply
 
-### Community 12 - "AdminPlayers"
-Cohesion: 0.60
-Nodes (5): AdminPlayers(), load(), setStatus(), listPlayers(), updatePlayerStatus()
+### Community 12 - "Players.jsx"
+Cohesion: 0.54
+Nodes (6): AdminPlayers(), load(), setStatus(), listPlayers(), updatePlayerStatus(), displayMobile()
 
 ## Knowledge Gaps
 - **4 isolated node(s):** `@types/react`, `@types/react-dom`, `oxlint`, `tailwindcss`
@@ -152,16 +152,16 @@ Nodes (5): AdminPlayers(), load(), setStatus(), listPlayers(), updatePlayerStatu
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `react` connect `LoadingSpinner` to `App.jsx`, `package.json`, `Collections.jsx`?**
-  _High betweenness centrality (0.039) - this node is a cross-community bridge._
+- **Why does `react` connect `LoadingSpinner` to `App.jsx`, `package.json`, `admin/Expenses.jsx`, `Players.jsx`?**
+  _High betweenness centrality (0.038) - this node is a cross-community bridge._
 - **What connects `@types/react`, `@types/react-dom`, `oxlint` to the rest of the system?**
   _4 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `App.jsx` be split into smaller, more focused modules?**
-  _Cohesion score 0.11627906976744186 - nodes in this community are weakly interconnected._
-- **Why does `lucide-react` connect `LoadingSpinner` to `App.jsx`, `package.json`, `Collections.jsx`?**
-  _High betweenness centrality (0.023) - this node is a cross-community bridge._
+  _Cohesion score 0.13360323886639677 - nodes in this community are weakly interconnected._
+- **Why does `lucide-react` connect `LoadingSpinner` to `App.jsx`, `package.json`, `admin/Expenses.jsx`?**
+  _High betweenness centrality (0.024) - this node is a cross-community bridge._
 - **Should `package.json` be split into smaller, more focused modules?**
-  _Cohesion score 0.05547652916073969 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.057057057057057055 - nodes in this community are weakly interconnected._
 - **Should `Changelog` be split into smaller, more focused modules?**
   _Cohesion score 0.09523809523809523 - nodes in this community are weakly interconnected._
 - **Should `Supabase` be split into smaller, more focused modules?**

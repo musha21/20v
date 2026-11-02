@@ -90,7 +90,54 @@ export default function AdminPlayers() {
 
       <section className="space-y-3">
         <h3 className="font-display text-lg text-pitch-900">All users</h3>
-        <div className="card-surface overflow-hidden rounded-2xl">
+        <div className="mobile-card-list">
+          {others.map((player) => (
+            <div key={player.id} className="card-surface rounded-2xl p-4">
+              <div className="flex items-start justify-between gap-3">
+                <div>
+                  <p className="font-semibold text-pitch-900">{player.full_name}</p>
+                  <p className="mt-1 text-sm text-muted">{displayMobile(player.mobile_number)}</p>
+                  <p className="mt-1 text-xs text-muted">{player.role}</p>
+                </div>
+                <span
+                  className={`rounded-full px-2 py-1 text-xs font-semibold ${
+                    player.status === 'APPROVED'
+                      ? 'bg-pitch-100 text-pitch-800'
+                      : player.status === 'REJECTED'
+                        ? 'bg-rose-100 text-rose-700'
+                        : 'bg-amber-100 text-amber-800'
+                  }`}
+                >
+                  {player.status}
+                </span>
+              </div>
+              {player.role === 'PLAYER' ? (
+                <div className="mt-3">
+                  {player.status !== 'APPROVED' ? (
+                    <button
+                      type="button"
+                      className="btn-secondary w-full"
+                      disabled={busyId === player.id}
+                      onClick={() => setStatus(player.id, 'APPROVED')}
+                    >
+                      Approve
+                    </button>
+                  ) : (
+                    <button
+                      type="button"
+                      className="btn-danger w-full"
+                      disabled={busyId === player.id}
+                      onClick={() => setStatus(player.id, 'REJECTED')}
+                    >
+                      Revoke
+                    </button>
+                  )}
+                </div>
+              ) : null}
+            </div>
+          ))}
+        </div>
+        <div className="desktop-table card-surface overflow-hidden rounded-2xl">
           <div className="overflow-x-auto">
             <table className="min-w-full text-left text-sm">
               <thead className="bg-pitch-50 text-pitch-800">

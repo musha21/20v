@@ -1,6 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { AuthProvider } from './context/AuthContext'
 import { RedirectIfAuth, RequireAdmin, RequireAuth, RequirePlayer } from './components/ProtectedRoute'
+import InstallBanner from './components/InstallBanner'
 import AuthLayout from './layouts/AuthLayout'
 import AdminLayout from './layouts/AdminLayout'
 import PlayerLayout from './layouts/PlayerLayout'
@@ -22,6 +23,7 @@ export default function App() {
   return (
     <AuthProvider>
       <BrowserRouter>
+        <InstallBanner />
         <Routes>
           <Route element={<AuthLayout />}>
             <Route
