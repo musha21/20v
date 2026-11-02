@@ -9,9 +9,9 @@
   "7": "Writing Guidelines for Postgres References",
   "8": "AdminCollections",
   "9": "Section Definitions",
-  "10": "Village Volleyball Ground Management System",
+  "10": "Malwanahinna Volleyball Ground Maintenance System",
   "11": "Supabase Postgres Best Practices",
-  "12": "Players.jsx",
+  "12": "AdminPlayers",
   "13": "advanced-full-text-search.md",
   "14": "advanced-jsonb-indexing.md",
   "15": "conn-idle-timeout.md",
@@ -44,5 +44,7 @@
   "42": "security-rls-basics.md",
   "43": "security-rls-performance.md",
   "44": "_template.md",
-  "45": "mcp.json"
+  "45": "mcp.json",
+  "46": "admin/Sponsors.jsx",
+  "47": "InstallBanner"
 }

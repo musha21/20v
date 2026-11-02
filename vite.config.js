@@ -59,4 +59,39 @@ export default defineConfig({
       },
     }),
   ],
+  build: {
+    rolldownOptions: {
+      output: {
+        codeSplitting: {
+          groups: [
+            {
+              name: 'react-vendor',
+              test: /node_modules[\\/](react|react-dom|scheduler)/,
+              priority: 40,
+            },
+            {
+              name: 'router',
+              test: /node_modules[\\/]react-router/,
+              priority: 35,
+            },
+            {
+              name: 'supabase',
+              test: /node_modules[\\/]@supabase/,
+              priority: 30,
+            },
+            {
+              name: 'recharts',
+              test: /node_modules[\\/](recharts|victory|d3-)/,
+              priority: 25,
+            },
+            {
+              name: 'vendor',
+              test: /node_modules/,
+              priority: 10,
+            },
+          ],
+        },
+      },
+    },
+  },
 })
