@@ -1,5 +1,5 @@
 {
-  "name": "village-volleyball-ground",
+  "name": "malwanahinna-volleyball-ground",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -24,6 +24,7 @@
     "@vitejs/plugin-react": "^6.1.2",
     "oxlint": "^1.89.0",
     "tailwindcss": "^4.3.3",
-    "vite": "^8.3.5"
+    "vite": "^8.3.5",
+    "vite-plugin-pwa": "^2.0.0"
   }
 }

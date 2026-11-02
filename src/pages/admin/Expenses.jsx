@@ -137,53 +137,91 @@ export default function AdminExpenses() {
       {rows.length === 0 ? (
         <EmptyState title="No expenses yet" description="Add balls, nets, lights or other purchases here." />
       ) : (
-        <div className="card-surface overflow-hidden rounded-2xl">
-          <div className="overflow-x-auto">
-            <table className="min-w-full text-left text-sm">
-              <thead className="bg-pitch-50 text-pitch-800">
-                <tr>
-                  <th className="px-4 py-3">Purchase</th>
-                  <th className="px-4 py-3">Date</th>
-                  <th className="px-4 py-3">Amount</th>
-                  <th className="px-4 py-3">Description</th>
-                  <th className="px-4 py-3">Actions</th>
-                </tr>
-              </thead>
-              <tbody>
-                {rows.map((row) => (
-                  <tr key={row.id} className="border-t border-pitch-50">
-                    <td className="px-4 py-3 font-medium">{row.purchase_name}</td>
-                    <td className="px-4 py-3">{formatDate(row.expense_date)}</td>
-                    <td className="px-4 py-3 font-semibold text-rose-700">{formatLKR(row.amount)}</td>
-                    <td className="px-4 py-3 text-muted">{row.description || '—'}</td>
-                    <td className="px-4 py-3">
-                      <div className="flex gap-2">
-                        <button
-                          type="button"
-                          className="btn-secondary px-2 py-1"
-                          onClick={() =>
-                            setForm({
-                              id: row.id,
-                              purchase_name: row.purchase_name,
-                              amount: String(row.amount),
-                              expense_date: row.expense_date,
-                              description: row.description || '',
-                            })
-                          }
-                        >
-                          <Pencil className="h-4 w-4" />
-                        </button>
-                        <button type="button" className="btn-danger px-2 py-1" onClick={() => setDeleteId(row.id)}>
-                          <Trash2 className="h-4 w-4" />
-                        </button>
-                      </div>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+        <>
+          <div className="mobile-card-list">
+            {rows.map((row) => (
+              <div key={row.id} className="card-surface rounded-2xl p-4">
+                <div className="flex items-start justify-between gap-3">
+                  <div>
+                    <p className="font-semibold text-pitch-900">{row.purchase_name}</p>
+                    <p className="mt-1 text-sm text-muted">{formatDate(row.expense_date)}</p>
+                    <p className="mt-1 text-sm text-muted">{row.description || 'No description'}</p>
+                  </div>
+                  <p className="font-display text-lg font-semibold text-rose-700">{formatLKR(row.amount)}</p>
+                </div>
+                <div className="mt-3 flex gap-2">
+                  <button
+                    type="button"
+                    className="btn-secondary flex-1"
+                    onClick={() =>
+                      setForm({
+                        id: row.id,
+                        purchase_name: row.purchase_name,
+                        amount: String(row.amount),
+                        expense_date: row.expense_date,
+                        description: row.description || '',
+                      })
+                    }
+                  >
+                    <Pencil className="h-4 w-4" />
+                    Edit
+                  </button>
+                  <button type="button" className="btn-danger flex-1" onClick={() => setDeleteId(row.id)}>
+                    <Trash2 className="h-4 w-4" />
+                    Delete
+                  </button>
+                </div>
+              </div>
+            ))}
           </div>
-        </div>
+          <div className="desktop-table card-surface overflow-hidden rounded-2xl">
+            <div className="overflow-x-auto">
+              <table className="min-w-full text-left text-sm">
+                <thead className="bg-pitch-50 text-pitch-800">
+                  <tr>
+                    <th className="px-4 py-3">Purchase</th>
+                    <th className="px-4 py-3">Date</th>
+                    <th className="px-4 py-3">Amount</th>
+                    <th className="px-4 py-3">Description</th>
+                    <th className="px-4 py-3">Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {rows.map((row) => (
+                    <tr key={row.id} className="border-t border-pitch-50">
+                      <td className="px-4 py-3 font-medium">{row.purchase_name}</td>
+                      <td className="px-4 py-3">{formatDate(row.expense_date)}</td>
+                      <td className="px-4 py-3 font-semibold text-rose-700">{formatLKR(row.amount)}</td>
+                      <td className="px-4 py-3 text-muted">{row.description || '—'}</td>
+                      <td className="px-4 py-3">
+                        <div className="flex gap-2">
+                          <button
+                            type="button"
+                            className="btn-secondary px-2 py-1"
+                            onClick={() =>
+                              setForm({
+                                id: row.id,
+                                purchase_name: row.purchase_name,
+                                amount: String(row.amount),
+                                expense_date: row.expense_date,
+                                description: row.description || '',
+                              })
+                            }
+                          >
+                            <Pencil className="h-4 w-4" />
+                          </button>
+                          <button type="button" className="btn-danger px-2 py-1" onClick={() => setDeleteId(row.id)}>
+                            <Trash2 className="h-4 w-4" />
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </>
       )}
 
       <ConfirmDialog

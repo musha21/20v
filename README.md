@@ -1,11 +1,12 @@
-# Village Volleyball Ground Management System
+# Malwanahinna Volleyball Ground Maintenance System
 
-Simple cash management for a village volleyball ground. Admin records daily cash totals, expenses, and sponsors. Players get view-only access after admin approval.
+A community initiative dedicated to maintaining and developing Malwanahinna Volleyball Ground. Admin records daily cash totals, expenses, and sponsors. Players get view-only access after admin approval.
 
 ## Stack
 
 - React + Vite (JavaScript)
 - Tailwind CSS
+- Progressive Web App (installable on Android and iPhone)
 - Supabase Auth + PostgreSQL + RLS
 
 ## Setup
@@ -21,6 +22,12 @@ Simple cash management for a village volleyball ground. Admin records daily cash
 npm install
 npm run dev
 ```
+
+## PWA install
+
+- Works on **HTTPS** production hosts or `localhost`.
+- **Android / Chrome:** use the bottom “Install” banner, or browser Install App menu.
+- **iPhone / Safari:** Share → Add to Home Screen (shown in the bottom banner tips).
 
 ## First admin
 
@@ -40,4 +47,3 @@ Mobile + password uses synthetic emails: `{normalizedMobile}@volley.local`.
 - Total Collection = sum of daily collections
 - Total Income = Opening Balance + Total Collection + Total Sponsorship
 - Current Balance = Total Income − Total Expenses
-"# 20v" 

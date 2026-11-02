@@ -163,30 +163,6 @@
       "source_location": "L16"
     },
     {
-      "id": "src_pages_admin_calendar_admincalendar",
-      "label": "AdminCalendar()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "App.jsx",
-      "file_type": "code",
-      "norm_label": "admincalendar()",
-      "source_file": "src/pages/admin/Calendar.jsx",
-      "source_location": "L9"
-    },
-    {
-      "id": "src_pages_admin_calendar_admincalendar_changemonth",
-      "label": "changeMonth()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "App.jsx",
-      "file_type": "code",
-      "norm_label": "changemonth()",
-      "source_file": "src/pages/admin/Calendar.jsx",
-      "source_location": "L64"
-    },
-    {
       "id": "src_pages_auth_login_login",
       "label": "Login()",
       "_callable": true,
@@ -295,30 +271,6 @@
       "source_location": "L15"
     },
     {
-      "id": "src_pages_player_calendar_playercalendar",
-      "label": "PlayerCalendar()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "App.jsx",
-      "file_type": "code",
-      "norm_label": "playercalendar()",
-      "source_file": "src/pages/player/Calendar.jsx",
-      "source_location": "L3"
-    },
-    {
-      "id": "src_utils_authemail_displaymobile",
-      "label": "displayMobile()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "App.jsx",
-      "file_type": "code",
-      "norm_label": "displaymobile()",
-      "source_file": "src/utils/authEmail.js",
-      "source_location": "L18"
-    },
-    {
       "id": "src_utils_authemail_isvalidmobile",
       "label": "isValidMobile()",
       "_callable": true,
@@ -360,7 +312,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 12,
-      "community_name": "AdminPlayers",
+      "community_name": "Players.jsx",
       "file_type": "code",
       "norm_label": "adminplayers()",
       "source_file": "src/pages/admin/Players.jsx",
@@ -372,7 +324,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 12,
-      "community_name": "AdminPlayers",
+      "community_name": "Players.jsx",
       "file_type": "code",
       "norm_label": "load()",
       "source_file": "src/pages/admin/Players.jsx",
@@ -384,7 +336,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 12,
-      "community_name": "AdminPlayers",
+      "community_name": "Players.jsx",
       "file_type": "code",
       "norm_label": "setstatus()",
       "source_file": "src/pages/admin/Players.jsx",
@@ -396,7 +348,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 12,
-      "community_name": "AdminPlayers",
+      "community_name": "Players.jsx",
       "file_type": "code",
       "norm_label": "listplayers()",
       "source_file": "src/services/players.js",
@@ -408,11 +360,23 @@
       "_callable": true,
       "_origin": "ast",
       "community": 12,
-      "community_name": "AdminPlayers",
+      "community_name": "Players.jsx",
       "file_type": "code",
       "norm_label": "updateplayerstatus()",
       "source_file": "src/services/players.js",
       "source_location": "L12"
+    },
+    {
+      "id": "src_utils_authemail_displaymobile",
+      "label": "displayMobile()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "Players.jsx",
+      "file_type": "code",
+      "norm_label": "displaymobile()",
+      "source_file": "src/utils/authEmail.js",
+      "source_location": "L18"
     },
     {
       "id": "src_components_daysummarypanel_daysummarypanel",
@@ -508,7 +472,31 @@
       "file_type": "code",
       "norm_label": "admindashboard()",
       "source_file": "src/pages/admin/Dashboard.jsx",
-      "source_location": "L25"
+      "source_location": "L28"
+    },
+    {
+      "id": "src_pages_admin_dashboard_admindashboard_handlesaveopening",
+      "label": "handleSaveOpening()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "LoadingSpinner",
+      "file_type": "code",
+      "norm_label": "handlesaveopening()",
+      "source_file": "src/pages/admin/Dashboard.jsx",
+      "source_location": "L60"
+    },
+    {
+      "id": "src_pages_admin_dashboard_admindashboard_loadsummary",
+      "label": "loadSummary()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "LoadingSpinner",
+      "file_type": "code",
+      "norm_label": "loadsummary()",
+      "source_file": "src/pages/admin/Dashboard.jsx",
+      "source_location": "L38"
     },
     {
       "id": "src_pages_admin_dashboard_recentlist",
@@ -520,7 +508,7 @@
       "file_type": "code",
       "norm_label": "recentlist()",
       "source_file": "src/pages/admin/Dashboard.jsx",
-      "source_location": "L116"
+      "source_location": "L192"
     },
     {
       "id": "src_pages_player_dashboard_playerdashboard",
@@ -559,6 +547,18 @@
       "source_location": "L8"
     },
     {
+      "id": "src_services_settings_saveopeningbalance",
+      "label": "saveOpeningBalance()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "LoadingSpinner",
+      "file_type": "code",
+      "norm_label": "saveopeningbalance()",
+      "source_file": "src/services/settings.js",
+      "source_location": "L31"
+    },
+    {
       "id": "src_utils_format_formatdate",
       "label": "formatDate()",
       "_callable": true,
@@ -595,16 +595,16 @@
       "source_location": "L29"
     },
     {
-      "id": "src_utils_format_todayiso",
-      "label": "todayISO()",
+      "id": "src_components_confirmdialog_confirmdialog",
+      "label": "ConfirmDialog()",
       "_callable": true,
       "_origin": "ast",
-      "community": 2,
-      "community_name": "LoadingSpinner",
+      "community": 3,
+      "community_name": "admin/Expenses.jsx",
       "file_type": "code",
-      "norm_label": "todayiso()",
-      "source_file": "src/utils/format.js",
-      "source_location": "L22"
+      "norm_label": "confirmdialog()",
+      "source_file": "src/components/ConfirmDialog.jsx",
+      "source_location": "L1"
     },
     {
       "id": "src_pages_admin_expenses_adminexpenses",
@@ -612,7 +612,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "AdminExpenses",
+      "community_name": "admin/Expenses.jsx",
       "file_type": "code",
       "norm_label": "adminexpenses()",
       "source_file": "src/pages/admin/Expenses.jsx",
@@ -624,7 +624,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "AdminExpenses",
+      "community_name": "admin/Expenses.jsx",
       "file_type": "code",
       "norm_label": "confirmdelete()",
       "source_file": "src/pages/admin/Expenses.jsx",
@@ -636,7 +636,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "AdminExpenses",
+      "community_name": "admin/Expenses.jsx",
       "file_type": "code",
       "norm_label": "handlesubmit()",
       "source_file": "src/pages/admin/Expenses.jsx",
@@ -648,7 +648,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "AdminExpenses",
+      "community_name": "admin/Expenses.jsx",
       "file_type": "code",
       "norm_label": "load()",
       "source_file": "src/pages/admin/Expenses.jsx",
@@ -660,7 +660,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "AdminExpenses",
+      "community_name": "admin/Expenses.jsx",
       "file_type": "code",
       "norm_label": "adminsponsors()",
       "source_file": "src/pages/admin/Sponsors.jsx",
@@ -672,7 +672,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "AdminExpenses",
+      "community_name": "admin/Expenses.jsx",
       "file_type": "code",
       "norm_label": "confirmdelete()",
       "source_file": "src/pages/admin/Sponsors.jsx",
@@ -684,7 +684,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "AdminExpenses",
+      "community_name": "admin/Expenses.jsx",
       "file_type": "code",
       "norm_label": "handlesubmit()",
       "source_file": "src/pages/admin/Sponsors.jsx",
@@ -696,7 +696,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "AdminExpenses",
+      "community_name": "admin/Expenses.jsx",
       "file_type": "code",
       "norm_label": "load()",
       "source_file": "src/pages/admin/Sponsors.jsx",
@@ -708,7 +708,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "AdminExpenses",
+      "community_name": "admin/Expenses.jsx",
       "file_type": "code",
       "norm_label": "deleteexpense()",
       "source_file": "src/services/expenses.js",
@@ -720,7 +720,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "AdminExpenses",
+      "community_name": "admin/Expenses.jsx",
       "file_type": "code",
       "norm_label": "listexpenses()",
       "source_file": "src/services/expenses.js",
@@ -732,7 +732,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "AdminExpenses",
+      "community_name": "admin/Expenses.jsx",
       "file_type": "code",
       "norm_label": "listexpensesbydate()",
       "source_file": "src/services/expenses.js",
@@ -744,59 +744,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "AdminExpenses",
+      "community_name": "admin/Expenses.jsx",
       "file_type": "code",
       "norm_label": "saveexpense()",
       "source_file": "src/services/expenses.js",
       "source_location": "L23"
-    },
-    {
-      "id": "src_services_finance_getdaysummary",
-      "label": "getDaySummary()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "AdminExpenses",
-      "file_type": "code",
-      "norm_label": "getdaysummary()",
-      "source_file": "src/services/finance.js",
-      "source_location": "L68"
-    },
-    {
-      "id": "src_services_finance_getfinancesummary",
-      "label": "getFinanceSummary()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "AdminExpenses",
-      "file_type": "code",
-      "norm_label": "getfinancesummary()",
-      "source_file": "src/services/finance.js",
-      "source_location": "L15"
-    },
-    {
-      "id": "src_services_finance_monthlabel",
-      "label": "monthLabel()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "AdminExpenses",
-      "file_type": "code",
-      "norm_label": "monthlabel()",
-      "source_file": "src/services/finance.js",
-      "source_location": "L10"
-    },
-    {
-      "id": "src_services_finance_sumamount",
-      "label": "sumAmount()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "AdminExpenses",
-      "file_type": "code",
-      "norm_label": "sumamount()",
-      "source_file": "src/services/finance.js",
-      "source_location": "L6"
     },
     {
       "id": "src_services_sponsors_deletesponsor",
@@ -804,7 +756,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "AdminExpenses",
+      "community_name": "admin/Expenses.jsx",
       "file_type": "code",
       "norm_label": "deletesponsor()",
       "source_file": "src/services/sponsors.js",
@@ -816,7 +768,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "AdminExpenses",
+      "community_name": "admin/Expenses.jsx",
       "file_type": "code",
       "norm_label": "listsponsors()",
       "source_file": "src/services/sponsors.js",
@@ -828,7 +780,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "AdminExpenses",
+      "community_name": "admin/Expenses.jsx",
       "file_type": "code",
       "norm_label": "listsponsorsbydate()",
       "source_file": "src/services/sponsors.js",
@@ -840,23 +792,47 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "AdminExpenses",
+      "community_name": "admin/Expenses.jsx",
       "file_type": "code",
       "norm_label": "savesponsor()",
       "source_file": "src/services/sponsors.js",
       "source_location": "L23"
     },
     {
-      "id": "src_components_confirmdialog_confirmdialog",
-      "label": "ConfirmDialog()",
+      "id": "src_utils_format_parseamount",
+      "label": "parseAmount()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "admin/Expenses.jsx",
+      "file_type": "code",
+      "norm_label": "parseamount()",
+      "source_file": "src/utils/format.js",
+      "source_location": "L35"
+    },
+    {
+      "id": "src_pages_admin_calendar_admincalendar",
+      "label": "AdminCalendar()",
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "Collections.jsx",
+      "community_name": "AdminCollections",
       "file_type": "code",
-      "norm_label": "confirmdialog()",
-      "source_file": "src/components/ConfirmDialog.jsx",
-      "source_location": "L1"
+      "norm_label": "admincalendar()",
+      "source_file": "src/pages/admin/Calendar.jsx",
+      "source_location": "L9"
+    },
+    {
+      "id": "src_pages_admin_calendar_admincalendar_changemonth",
+      "label": "changeMonth()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "AdminCollections",
+      "file_type": "code",
+      "norm_label": "changemonth()",
+      "source_file": "src/pages/admin/Calendar.jsx",
+      "source_location": "L64"
     },
     {
       "id": "src_pages_admin_collections_admincollections",
@@ -864,7 +840,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "Collections.jsx",
+      "community_name": "AdminCollections",
       "file_type": "code",
       "norm_label": "admincollections()",
       "source_file": "src/pages/admin/Collections.jsx",
@@ -876,7 +852,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "Collections.jsx",
+      "community_name": "AdminCollections",
       "file_type": "code",
       "norm_label": "confirmdelete()",
       "source_file": "src/pages/admin/Collections.jsx",
@@ -888,7 +864,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "Collections.jsx",
+      "community_name": "AdminCollections",
       "file_type": "code",
       "norm_label": "handlesubmit()",
       "source_file": "src/pages/admin/Collections.jsx",
@@ -900,11 +876,23 @@
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "Collections.jsx",
+      "community_name": "AdminCollections",
       "file_type": "code",
       "norm_label": "load()",
       "source_file": "src/pages/admin/Collections.jsx",
       "source_location": "L27"
+    },
+    {
+      "id": "src_pages_player_calendar_playercalendar",
+      "label": "PlayerCalendar()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "AdminCollections",
+      "file_type": "code",
+      "norm_label": "playercalendar()",
+      "source_file": "src/pages/player/Calendar.jsx",
+      "source_location": "L3"
     },
     {
       "id": "src_services_collections_deletecollection",
@@ -912,7 +900,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "Collections.jsx",
+      "community_name": "AdminCollections",
       "file_type": "code",
       "norm_label": "deletecollection()",
       "source_file": "src/services/collections.js",
@@ -924,7 +912,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "Collections.jsx",
+      "community_name": "AdminCollections",
       "file_type": "code",
       "norm_label": "getcollectionbydate()",
       "source_file": "src/services/collections.js",
@@ -936,7 +924,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "Collections.jsx",
+      "community_name": "AdminCollections",
       "file_type": "code",
       "norm_label": "listcollections()",
       "source_file": "src/services/collections.js",
@@ -948,23 +936,95 @@
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "Collections.jsx",
+      "community_name": "AdminCollections",
       "file_type": "code",
       "norm_label": "upsertcollection()",
       "source_file": "src/services/collections.js",
       "source_location": "L22"
     },
     {
-      "id": "src_utils_format_parseamount",
-      "label": "parseAmount()",
+      "id": "src_services_finance_getdaysummary",
+      "label": "getDaySummary()",
       "_callable": true,
       "_origin": "ast",
       "community": 8,
-      "community_name": "Collections.jsx",
+      "community_name": "AdminCollections",
       "file_type": "code",
-      "norm_label": "parseamount()",
+      "norm_label": "getdaysummary()",
+      "source_file": "src/services/finance.js",
+      "source_location": "L74"
+    },
+    {
+      "id": "src_services_finance_getfinancesummary",
+      "label": "getFinanceSummary()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "AdminCollections",
+      "file_type": "code",
+      "norm_label": "getfinancesummary()",
+      "source_file": "src/services/finance.js",
+      "source_location": "L16"
+    },
+    {
+      "id": "src_services_finance_monthlabel",
+      "label": "monthLabel()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "AdminCollections",
+      "file_type": "code",
+      "norm_label": "monthlabel()",
+      "source_file": "src/services/finance.js",
+      "source_location": "L11"
+    },
+    {
+      "id": "src_services_finance_sumamount",
+      "label": "sumAmount()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "AdminCollections",
+      "file_type": "code",
+      "norm_label": "sumamount()",
+      "source_file": "src/services/finance.js",
+      "source_location": "L7"
+    },
+    {
+      "id": "src_services_settings_getgroundsettings",
+      "label": "getGroundSettings()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "AdminCollections",
+      "file_type": "code",
+      "norm_label": "getgroundsettings()",
+      "source_file": "src/services/settings.js",
+      "source_location": "L3"
+    },
+    {
+      "id": "src_services_settings_getopeningbalance",
+      "label": "getOpeningBalance()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "AdminCollections",
+      "file_type": "code",
+      "norm_label": "getopeningbalance()",
+      "source_file": "src/services/settings.js",
+      "source_location": "L22"
+    },
+    {
+      "id": "src_utils_format_todayiso",
+      "label": "todayISO()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "AdminCollections",
+      "file_type": "code",
+      "norm_label": "todayiso()",
       "source_file": "src/utils/format.js",
-      "source_location": "L35"
+      "source_location": "L22"
     },
     {
       "id": "src_app",
@@ -1096,17 +1156,6 @@
       "file_type": "code",
       "norm_label": "register.jsx",
       "source_file": "src/pages/auth/Register.jsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_pages_player_calendar",
-      "label": "player/Calendar.jsx",
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "App.jsx",
-      "file_type": "code",
-      "norm_label": "player/calendar.jsx",
-      "source_file": "src/pages/player/Calendar.jsx",
       "source_location": "L1"
     },
     {
@@ -1462,17 +1511,6 @@
       "source_location": "L18"
     },
     {
-      "id": "ref_supabase_supabase_js",
-      "label": "@supabase/supabase-js",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "package.json",
-      "file_type": "concept",
-      "norm_label": "@supabase/supabase-js",
-      "source_file": "package.json",
-      "source_location": "L13"
-    },
-    {
       "id": "ref_tailwindcss",
       "label": "tailwindcss",
       "_origin": "ast",
@@ -1700,11 +1738,22 @@
       "source_location": "L17"
     },
     {
+      "id": "src_pages_admin_players",
+      "label": "Players.jsx",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "Players.jsx",
+      "file_type": "code",
+      "norm_label": "players.jsx",
+      "source_file": "src/pages/admin/Players.jsx",
+      "source_location": "L1"
+    },
+    {
       "id": "src_services_players",
       "label": "players.js",
       "_origin": "ast",
       "community": 12,
-      "community_name": "AdminPlayers",
+      "community_name": "Players.jsx",
       "file_type": "code",
       "norm_label": "players.js",
       "source_file": "src/services/players.js",
@@ -1998,6 +2047,28 @@
       "source_location": "L1"
     },
     {
+      "id": "src_pages_admin_collections",
+      "label": "Collections.jsx",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "LoadingSpinner",
+      "file_type": "code",
+      "norm_label": "collections.jsx",
+      "source_file": "src/pages/admin/Collections.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_pages_admin_collections_emptyform",
+      "label": "emptyForm",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "LoadingSpinner",
+      "file_type": "code",
+      "norm_label": "emptyform",
+      "source_file": "src/pages/admin/Collections.jsx",
+      "source_location": "L11"
+    },
+    {
       "id": "src_pages_admin_dashboard",
       "label": "admin/Dashboard.jsx",
       "_origin": "ast",
@@ -2007,61 +2078,6 @@
       "norm_label": "admin/dashboard.jsx",
       "source_file": "src/pages/admin/Dashboard.jsx",
       "source_location": "L1"
-    },
-    {
-      "id": "src_pages_admin_expenses",
-      "label": "admin/Expenses.jsx",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "LoadingSpinner",
-      "file_type": "code",
-      "norm_label": "admin/expenses.jsx",
-      "source_file": "src/pages/admin/Expenses.jsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_pages_admin_expenses_emptyform",
-      "label": "emptyForm",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "LoadingSpinner",
-      "file_type": "code",
-      "norm_label": "emptyform",
-      "source_file": "src/pages/admin/Expenses.jsx",
-      "source_location": "L11"
-    },
-    {
-      "id": "src_pages_admin_players",
-      "label": "Players.jsx",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "LoadingSpinner",
-      "file_type": "code",
-      "norm_label": "players.jsx",
-      "source_file": "src/pages/admin/Players.jsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_pages_admin_sponsors",
-      "label": "admin/Sponsors.jsx",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "LoadingSpinner",
-      "file_type": "code",
-      "norm_label": "admin/sponsors.jsx",
-      "source_file": "src/pages/admin/Sponsors.jsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_pages_admin_sponsors_emptyform",
-      "label": "emptyForm",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "LoadingSpinner",
-      "file_type": "code",
-      "norm_label": "emptyform",
-      "source_file": "src/pages/admin/Sponsors.jsx",
-      "source_location": "L11"
     },
     {
       "id": "src_pages_player_dashboard",
@@ -2441,47 +2457,69 @@
       "source_location": "L8"
     },
     {
-      "id": "src_lib_supabaseclient",
-      "label": "supabaseClient.js",
+      "id": "src_components_confirmdialog",
+      "label": "ConfirmDialog.jsx",
       "_origin": "ast",
       "community": 3,
-      "community_name": "AdminExpenses",
+      "community_name": "admin/Expenses.jsx",
       "file_type": "code",
-      "norm_label": "supabaseclient.js",
-      "source_file": "src/lib/supabaseClient.js",
+      "norm_label": "confirmdialog.jsx",
+      "source_file": "src/components/ConfirmDialog.jsx",
       "source_location": "L1"
     },
     {
-      "id": "src_lib_supabaseclient_supabase",
-      "label": "supabase",
+      "id": "src_pages_admin_expenses",
+      "label": "admin/Expenses.jsx",
       "_origin": "ast",
       "community": 3,
-      "community_name": "AdminExpenses",
+      "community_name": "admin/Expenses.jsx",
       "file_type": "code",
-      "norm_label": "supabase",
-      "source_file": "src/lib/supabaseClient.js",
-      "source_location": "L10"
+      "norm_label": "admin/expenses.jsx",
+      "source_file": "src/pages/admin/Expenses.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_pages_admin_expenses_emptyform",
+      "label": "emptyForm",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "admin/Expenses.jsx",
+      "file_type": "code",
+      "norm_label": "emptyform",
+      "source_file": "src/pages/admin/Expenses.jsx",
+      "source_location": "L11"
+    },
+    {
+      "id": "src_pages_admin_sponsors",
+      "label": "admin/Sponsors.jsx",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "admin/Expenses.jsx",
+      "file_type": "code",
+      "norm_label": "admin/sponsors.jsx",
+      "source_file": "src/pages/admin/Sponsors.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_pages_admin_sponsors_emptyform",
+      "label": "emptyForm",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "admin/Expenses.jsx",
+      "file_type": "code",
+      "norm_label": "emptyform",
+      "source_file": "src/pages/admin/Sponsors.jsx",
+      "source_location": "L11"
     },
     {
       "id": "src_services_expenses",
       "label": "expenses.js",
       "_origin": "ast",
       "community": 3,
-      "community_name": "AdminExpenses",
+      "community_name": "admin/Expenses.jsx",
       "file_type": "code",
       "norm_label": "expenses.js",
       "source_file": "src/services/expenses.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_services_finance",
-      "label": "finance.js",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "AdminExpenses",
-      "file_type": "code",
-      "norm_label": "finance.js",
-      "source_file": "src/services/finance.js",
       "source_location": "L1"
     },
     {
@@ -2489,7 +2527,7 @@
       "label": "sponsors.js",
       "_origin": "ast",
       "community": 3,
-      "community_name": "AdminExpenses",
+      "community_name": "admin/Expenses.jsx",
       "file_type": "code",
       "norm_label": "sponsors.js",
       "source_file": "src/services/sponsors.js",
@@ -3842,48 +3880,81 @@
       "source_location": "L1"
     },
     {
-      "id": "src_components_confirmdialog",
-      "label": "ConfirmDialog.jsx",
+      "id": "src_lib_supabaseclient",
+      "label": "supabaseClient.js",
       "_origin": "ast",
       "community": 8,
-      "community_name": "Collections.jsx",
+      "community_name": "AdminCollections",
       "file_type": "code",
-      "norm_label": "confirmdialog.jsx",
-      "source_file": "src/components/ConfirmDialog.jsx",
+      "norm_label": "supabaseclient.js",
+      "source_file": "src/lib/supabaseClient.js",
       "source_location": "L1"
     },
     {
-      "id": "src_pages_admin_collections",
-      "label": "Collections.jsx",
+      "id": "src_lib_supabaseclient_supabase",
+      "label": "supabase",
       "_origin": "ast",
       "community": 8,
-      "community_name": "Collections.jsx",
+      "community_name": "AdminCollections",
       "file_type": "code",
-      "norm_label": "collections.jsx",
-      "source_file": "src/pages/admin/Collections.jsx",
-      "source_location": "L1"
+      "norm_label": "supabase",
+      "source_file": "src/lib/supabaseClient.js",
+      "source_location": "L10"
     },
     {
-      "id": "src_pages_admin_collections_emptyform",
-      "label": "emptyForm",
+      "id": "src_pages_player_calendar",
+      "label": "player/Calendar.jsx",
       "_origin": "ast",
       "community": 8,
-      "community_name": "Collections.jsx",
+      "community_name": "AdminCollections",
       "file_type": "code",
-      "norm_label": "emptyform",
-      "source_file": "src/pages/admin/Collections.jsx",
-      "source_location": "L11"
+      "norm_label": "player/calendar.jsx",
+      "source_file": "src/pages/player/Calendar.jsx",
+      "source_location": "L1"
     },
     {
       "id": "src_services_collections",
       "label": "collections.js",
       "_origin": "ast",
       "community": 8,
-      "community_name": "Collections.jsx",
+      "community_name": "AdminCollections",
       "file_type": "code",
       "norm_label": "collections.js",
       "source_file": "src/services/collections.js",
       "source_location": "L1"
+    },
+    {
+      "id": "src_services_finance",
+      "label": "finance.js",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "AdminCollections",
+      "file_type": "code",
+      "norm_label": "finance.js",
+      "source_file": "src/services/finance.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_services_settings",
+      "label": "settings.js",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "AdminCollections",
+      "file_type": "code",
+      "norm_label": "settings.js",
+      "source_file": "src/services/settings.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "ref_supabase_supabase_js",
+      "label": "@supabase/supabase-js",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "AdminCollections",
+      "file_type": "concept",
+      "norm_label": "@supabase/supabase-js",
+      "source_file": "package.json",
+      "source_location": "L13"
     },
     {
       "id": "agents_skills_supabase_postgres_best_practices_references_sections",
@@ -4788,66 +4859,6 @@
     },
     {
       "source": "src_pages_admin_dashboard_admindashboard",
-      "target": "src_services_finance_getfinancesummary",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/pages/admin/Dashboard.jsx",
-      "source_location": "L32",
-      "weight": 1.0
-    },
-    {
-      "source": "src_pages_admin_dashboard_admindashboard",
-      "target": "src_components_loadingspinner_loadingspinner",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/pages/admin/Dashboard.jsx",
-      "source_location": "L47",
-      "weight": 1.0
-    },
-    {
-      "source": "src_pages_admin_dashboard_admindashboard",
-      "target": "src_components_pageheader_pageheader",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/pages/admin/Dashboard.jsx",
-      "source_location": "L53",
-      "weight": 1.0
-    },
-    {
-      "source": "src_pages_admin_dashboard_admindashboard",
-      "target": "src_components_summarycard_summarycard",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/pages/admin/Dashboard.jsx",
-      "source_location": "L56",
-      "weight": 1.0
-    },
-    {
-      "source": "src_pages_admin_dashboard_admindashboard",
-      "target": "src_utils_format_formatlkr",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/pages/admin/Dashboard.jsx",
-      "source_location": "L56",
-      "weight": 1.0
-    },
-    {
-      "source": "src_pages_admin_dashboard_admindashboard",
       "target": "src_pages_admin_dashboard_recentlist",
       "relation": "calls",
       "_origin": "ast",
@@ -4855,7 +4866,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/pages/admin/Dashboard.jsx",
-      "source_location": "L81",
+      "source_location": "L157",
       "weight": 1.0
     },
     {
@@ -4867,7 +4878,151 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/pages/admin/Dashboard.jsx",
+      "source_location": "L163",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_admin_dashboard_admindashboard",
+      "target": "src_context_authcontext_useauth",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/pages/admin/Dashboard.jsx",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_admin_dashboard_admindashboard",
+      "target": "src_services_finance_getfinancesummary",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/pages/admin/Dashboard.jsx",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_admin_dashboard_admindashboard",
+      "target": "src_services_settings_saveopeningbalance",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/pages/admin/Dashboard.jsx",
+      "source_location": "L66",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_admin_dashboard_admindashboard",
+      "target": "src_utils_format_parseamount",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/pages/admin/Dashboard.jsx",
+      "source_location": "L68",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_admin_dashboard_admindashboard",
+      "target": "src_components_loadingspinner_loadingspinner",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/pages/admin/Dashboard.jsx",
+      "source_location": "L81",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_admin_dashboard_admindashboard",
+      "target": "src_components_pageheader_pageheader",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/pages/admin/Dashboard.jsx",
       "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_admin_dashboard_admindashboard",
+      "target": "src_components_summarycard_summarycard",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/pages/admin/Dashboard.jsx",
+      "source_location": "L90",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_admin_dashboard_admindashboard",
+      "target": "src_utils_format_formatlkr",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/pages/admin/Dashboard.jsx",
+      "source_location": "L90",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_admin_dashboard_admindashboard_handlesaveopening",
+      "target": "src_services_settings_saveopeningbalance",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/pages/admin/Dashboard.jsx",
+      "source_location": "L66",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_admin_dashboard_admindashboard_handlesaveopening",
+      "target": "src_utils_format_parseamount",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/pages/admin/Dashboard.jsx",
+      "source_location": "L68",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_admin_dashboard_admindashboard_handlesaveopening",
+      "target": "src_pages_admin_dashboard_admindashboard_loadsummary",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/pages/admin/Dashboard.jsx",
+      "source_location": "L72",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_admin_dashboard_admindashboard_loadsummary",
+      "target": "src_services_finance_getfinancesummary",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/pages/admin/Dashboard.jsx",
+      "source_location": "L39",
       "weight": 1.0
     },
     {
@@ -5551,7 +5706,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/pages/player/Dashboard.jsx",
-      "source_location": "L62",
+      "source_location": "L63",
       "weight": 1.0
     },
     {
@@ -5563,7 +5718,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/pages/player/Dashboard.jsx",
-      "source_location": "L86",
+      "source_location": "L87",
       "weight": 1.0
     },
     {
@@ -5719,7 +5874,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/services/finance.js",
-      "source_location": "L70",
+      "source_location": "L76",
       "weight": 1.0
     },
     {
@@ -5731,7 +5886,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/services/finance.js",
-      "source_location": "L71",
+      "source_location": "L77",
       "weight": 1.0
     },
     {
@@ -5743,7 +5898,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/services/finance.js",
-      "source_location": "L72",
+      "source_location": "L78",
       "weight": 1.0
     },
     {
@@ -5755,7 +5910,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/services/finance.js",
-      "source_location": "L80",
+      "source_location": "L86",
       "weight": 1.0
     },
     {
@@ -5767,7 +5922,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/services/finance.js",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -5779,7 +5934,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/services/finance.js",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -5791,7 +5946,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/services/finance.js",
-      "source_location": "L19",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "src_services_finance_getfinancesummary",
+      "target": "src_services_settings_getopeningbalance",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/services/finance.js",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -5803,7 +5970,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/services/finance.js",
-      "source_location": "L22",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -5815,7 +5982,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/services/finance.js",
-      "source_location": "L24",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -5827,7 +5994,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/services/finance.js",
-      "source_location": "L34",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "src_services_settings_getopeningbalance",
+      "target": "src_services_settings_getgroundsettings",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/services/settings.js",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -5876,6 +6055,18 @@
       "context": "call",
       "source_file": "src/pages/admin/Collections.jsx",
       "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_admin_dashboard_admindashboard",
+      "target": "src_pages_admin_dashboard_admindashboard_loadsummary",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/pages/admin/Dashboard.jsx",
+      "source_location": "L38",
       "weight": 1.0
     },
     {
@@ -6727,7 +6918,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/pages/admin/Dashboard.jsx",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -6739,7 +6930,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/pages/admin/Dashboard.jsx",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -6751,7 +6942,19 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/pages/admin/Dashboard.jsx",
-      "source_location": "L21",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_admin_dashboard",
+      "target": "src_context_authcontext_useauth",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/pages/admin/Dashboard.jsx",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -6763,7 +6966,19 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/pages/admin/Dashboard.jsx",
-      "source_location": "L22",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_admin_dashboard",
+      "target": "src_services_settings_saveopeningbalance",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/pages/admin/Dashboard.jsx",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -6775,7 +6990,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/pages/admin/Dashboard.jsx",
-      "source_location": "L23",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -6787,7 +7002,19 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/pages/admin/Dashboard.jsx",
-      "source_location": "L23",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_admin_dashboard",
+      "target": "src_utils_format_parseamount",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/pages/admin/Dashboard.jsx",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -7512,7 +7739,7 @@
     },
     {
       "source": "src_services_finance",
-      "target": "src_utils_format_todayiso",
+      "target": "src_services_settings_getopeningbalance",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7520,6 +7747,18 @@
       "context": "import",
       "source_file": "src/services/finance.js",
       "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_services_finance",
+      "target": "src_utils_format_todayiso",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/services/finance.js",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -7531,6 +7770,18 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/services/players.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_services_settings",
+      "target": "src_lib_supabaseclient_supabase",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/services/settings.js",
       "source_location": "L1",
       "weight": 1.0
     },
@@ -8256,14 +8507,14 @@
     },
     {
       "source": "src_pages_admin_dashboard",
-      "target": "src_components_pageheader",
+      "target": "ref_recharts",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/pages/admin/Dashboard.jsx",
-      "source_location": "L19",
+      "source_location": "L10",
       "weight": 1.0
     },
     {
@@ -8280,7 +8531,7 @@
     },
     {
       "source": "src_pages_admin_dashboard",
-      "target": "src_components_summarycard",
+      "target": "src_components_pageheader",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -8292,7 +8543,7 @@
     },
     {
       "source": "src_pages_admin_dashboard",
-      "target": "src_components_loadingspinner",
+      "target": "src_components_summarycard",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -8304,7 +8555,7 @@
     },
     {
       "source": "src_pages_admin_dashboard",
-      "target": "src_services_finance",
+      "target": "src_components_loadingspinner",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -8316,7 +8567,7 @@
     },
     {
       "source": "src_pages_admin_dashboard",
-      "target": "src_utils_format",
+      "target": "src_context_authcontext",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -8328,14 +8579,38 @@
     },
     {
       "source": "src_pages_admin_dashboard",
-      "target": "ref_recharts",
+      "target": "src_services_finance",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/pages/admin/Dashboard.jsx",
-      "source_location": "L9",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_admin_dashboard",
+      "target": "src_services_settings",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/pages/admin/Dashboard.jsx",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_admin_dashboard",
+      "target": "src_utils_format",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/pages/admin/Dashboard.jsx",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -9060,7 +9335,7 @@
     },
     {
       "source": "src_services_finance",
-      "target": "src_utils_format",
+      "target": "src_services_settings",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -9068,6 +9343,18 @@
       "context": "import",
       "source_file": "src/services/finance.js",
       "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_services_finance",
+      "target": "src_utils_format",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/services/finance.js",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -9079,6 +9366,18 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/services/players.js",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_services_settings",
+      "target": "src_lib_supabaseclient",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/services/settings.js",
       "source_location": "L1",
       "weight": 1.0
     },
@@ -11052,7 +11351,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/pages/admin/Dashboard.jsx",
-      "source_location": "L116",
+      "source_location": "L192",
       "weight": 1.0
     },
     {
@@ -11063,7 +11362,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/pages/admin/Dashboard.jsx",
-      "source_location": "L25",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_admin_dashboard_admindashboard",
+      "target": "src_pages_admin_dashboard_admindashboard_handlesaveopening",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/admin/Dashboard.jsx",
+      "source_location": "L60",
       "weight": 1.0
     },
     {
@@ -11404,7 +11714,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/services/finance.js",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
@@ -11415,7 +11725,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/services/finance.js",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -11426,7 +11736,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/services/finance.js",
-      "source_location": "L6",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -11437,7 +11747,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/services/finance.js",
-      "source_location": "L68",
+      "source_location": "L74",
       "weight": 1.0
     },
     {
@@ -11460,6 +11770,39 @@
       "confidence_score": 1.0,
       "source_file": "src/services/players.js",
       "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_services_settings",
+      "target": "src_services_settings_getopeningbalance",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/services/settings.js",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "src_services_settings",
+      "target": "src_services_settings_getgroundsettings",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/services/settings.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_services_settings",
+      "target": "src_services_settings_saveopeningbalance",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/services/settings.js",
+      "source_location": "L31",
       "weight": 1.0
     },
     {

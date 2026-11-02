@@ -63,7 +63,7 @@ export default function MonthCalendar({
 
       <div className="grid grid-cols-7 gap-1">
         {cells.map((cell, index) => {
-          if (!cell) return <div key={`empty-${index}`} className="min-h-16 rounded-xl bg-transparent" />
+          if (!cell) return <div key={`empty-${index}`} className="min-h-[4.5rem] rounded-xl bg-transparent sm:min-h-16" />
 
           const amount = amountsByDate[cell.date]
           const selected = selectedDate === cell.date
@@ -74,7 +74,7 @@ export default function MonthCalendar({
               key={cell.date}
               type="button"
               onClick={() => onSelectDate(cell.date)}
-              className={`min-h-16 rounded-xl border p-1.5 text-left transition ${
+              className={`min-h-[4.5rem] rounded-xl border p-1.5 text-left transition sm:min-h-16 ${
                 selected
                   ? 'border-pitch-600 bg-pitch-600 text-white shadow-md'
                   : hasAmount
