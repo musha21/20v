@@ -1,7 +1,6 @@
 import { NavLink, Outlet, useNavigate } from 'react-router-dom'
 import { LayoutDashboard, CalendarDays, ShoppingBag, Handshake, LogOut } from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
-import logo from '../assets/logo.png'
 
 const links = [
   { to: '/player', label: 'Home', icon: LayoutDashboard, end: true },
@@ -23,7 +22,7 @@ export default function PlayerLayout() {
     <div className="min-h-screen overflow-x-hidden lg:flex">
       <aside className="hidden w-64 shrink-0 border-r border-pitch-100 bg-white/90 p-4 lg:flex lg:flex-col">
         <div className="mb-8 flex items-center gap-3 px-2">
-          <img src={logo} alt="" className="h-11 w-11 rounded-xl object-cover ring-1 ring-pitch-100" />
+          <img src="/logo.png" alt="" className="h-11 w-11 rounded-xl object-cover ring-1 ring-pitch-100" width={44} height={44} decoding="async" />
           <div>
             <p className="font-display text-base font-bold leading-tight text-pitch-800">Malwanahinna VG</p>
             <p className="text-xs text-muted">Player view</p>
@@ -56,7 +55,7 @@ export default function PlayerLayout() {
         <header className="sticky top-0 z-20 border-b border-pitch-100 bg-white/80 px-4 py-3 pt-[max(0.75rem,env(safe-area-inset-top))] backdrop-blur lg:px-6">
           <div className="flex items-center justify-between gap-3">
             <div className="flex min-w-0 items-center gap-2">
-              <img src={logo} alt="" className="h-9 w-9 rounded-lg object-cover lg:hidden" />
+              <img src="/logo.png" alt="" className="h-9 w-9 rounded-lg object-cover lg:hidden" width={36} height={36} decoding="async" />
               <div className="min-w-0">
                 <p className="truncate font-display text-base text-pitch-900 lg:hidden">Malwanahinna</p>
                 <p className="truncate text-sm text-muted">Hi, {profile?.full_name || 'Player'}</p>

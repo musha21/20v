@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { lazy, Suspense, useEffect, useState } from 'react'
 import {
   Wallet,
   HandCoins,
@@ -7,16 +7,6 @@ import {
   TrendingUp,
   PiggyBank,
 } from 'lucide-react'
-import {
-  ResponsiveContainer,
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  Tooltip,
-  Legend,
-  CartesianGrid,
-} from 'recharts'
 import PageHeader from '../../components/PageHeader'
 import SummaryCard from '../../components/SummaryCard'
 import LoadingSpinner from '../../components/LoadingSpinner'
@@ -24,6 +14,8 @@ import { useAuth } from '../../context/AuthContext'
 import { getFinanceSummary } from '../../services/finance'
 import { saveOpeningBalance } from '../../services/settings'
 import { formatDate, formatLKR, parseAmount } from '../../utils/format'
+
+const MonthlyFinanceChart = lazy(() => import('../../components/MonthlyFinanceChart'))
 
 export default function AdminDashboard() {
   const { user } = useAuth()
@@ -136,22 +128,15 @@ export default function AdminDashboard() {
         ) : null}
       </form>
 
-      <div className="card-surface rounded-2xl p-4">
-        <h3 className="mb-3 font-display text-lg text-pitch-900">Monthly collection vs expenses</h3>
-        <div className="h-72">
-          <ResponsiveContainer width="100%" height="100%">
-            <BarChart data={summary.monthlyChart}>
-              <CartesianGrid strokeDasharray="3 3" stroke="#dcfce7" />
-              <XAxis dataKey="month" />
-              <YAxis />
-              <Tooltip formatter={(value) => formatLKR(value)} />
-              <Legend />
-              <Bar dataKey="collection" name="Collection" fill="#16a34a" radius={[6, 6, 0, 0]} />
-              <Bar dataKey="expense" name="Expenses" fill="#f43f5e" radius={[6, 6, 0, 0]} />
-            </BarChart>
-          </ResponsiveContainer>
-        </div>
-      </div>
+      <Suspense
+        fallback={
+          <div className="card-surface flex h-72 items-center justify-center rounded-2xl p-4 text-sm text-muted">
+            Loading chart...
+          </div>
+        }
+      >
+        <MonthlyFinanceChart data={summary.monthlyChart} />
+      </Suspense>
 
       <div className="grid gap-4 lg:grid-cols-3">
         <RecentList

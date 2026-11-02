@@ -16,7 +16,7 @@
       "file_type": "code",
       "norm_label": "app()",
       "source_file": "src/App.jsx",
-      "source_location": "L21"
+      "source_location": "L22"
     },
     {
       "id": "src_components_protectedroute_redirectifauth",
@@ -112,7 +112,7 @@
       "file_type": "code",
       "norm_label": "adminlayout()",
       "source_file": "src/layouts/AdminLayout.jsx",
-      "source_location": "L22"
+      "source_location": "L23"
     },
     {
       "id": "src_layouts_adminlayout_adminlayout_handlelogout",
@@ -124,7 +124,7 @@
       "file_type": "code",
       "norm_label": "handlelogout()",
       "source_file": "src/layouts/AdminLayout.jsx",
-      "source_location": "L26"
+      "source_location": "L27"
     },
     {
       "id": "src_layouts_authlayout_authlayout",
@@ -136,7 +136,7 @@
       "file_type": "code",
       "norm_label": "authlayout()",
       "source_file": "src/layouts/AuthLayout.jsx",
-      "source_location": "L3"
+      "source_location": "L4"
     },
     {
       "id": "src_layouts_playerlayout_playerlayout",
@@ -148,7 +148,7 @@
       "file_type": "code",
       "norm_label": "playerlayout()",
       "source_file": "src/layouts/PlayerLayout.jsx",
-      "source_location": "L12"
+      "source_location": "L13"
     },
     {
       "id": "src_layouts_playerlayout_playerlayout_handlelogout",
@@ -160,7 +160,7 @@
       "file_type": "code",
       "norm_label": "handlelogout()",
       "source_file": "src/layouts/PlayerLayout.jsx",
-      "source_location": "L16"
+      "source_location": "L17"
     },
     {
       "id": "src_pages_auth_login_login",
@@ -271,6 +271,18 @@
       "source_location": "L15"
     },
     {
+      "id": "src_utils_authemail_displaymobile",
+      "label": "displayMobile()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "App.jsx",
+      "file_type": "code",
+      "norm_label": "displaymobile()",
+      "source_file": "src/utils/authEmail.js",
+      "source_location": "L18"
+    },
+    {
       "id": "src_utils_authemail_isvalidmobile",
       "label": "isValidMobile()",
       "_callable": true,
@@ -312,7 +324,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 12,
-      "community_name": "Players.jsx",
+      "community_name": "AdminPlayers",
       "file_type": "code",
       "norm_label": "adminplayers()",
       "source_file": "src/pages/admin/Players.jsx",
@@ -324,7 +336,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 12,
-      "community_name": "Players.jsx",
+      "community_name": "AdminPlayers",
       "file_type": "code",
       "norm_label": "load()",
       "source_file": "src/pages/admin/Players.jsx",
@@ -336,7 +348,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 12,
-      "community_name": "Players.jsx",
+      "community_name": "AdminPlayers",
       "file_type": "code",
       "norm_label": "setstatus()",
       "source_file": "src/pages/admin/Players.jsx",
@@ -348,7 +360,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 12,
-      "community_name": "Players.jsx",
+      "community_name": "AdminPlayers",
       "file_type": "code",
       "norm_label": "listplayers()",
       "source_file": "src/services/players.js",
@@ -360,23 +372,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 12,
-      "community_name": "Players.jsx",
+      "community_name": "AdminPlayers",
       "file_type": "code",
       "norm_label": "updateplayerstatus()",
       "source_file": "src/services/players.js",
       "source_location": "L12"
-    },
-    {
-      "id": "src_utils_authemail_displaymobile",
-      "label": "displayMobile()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "Players.jsx",
-      "file_type": "code",
-      "norm_label": "displaymobile()",
-      "source_file": "src/utils/authEmail.js",
-      "source_location": "L18"
     },
     {
       "id": "src_components_daysummarypanel_daysummarypanel",
@@ -655,54 +655,6 @@
       "source_location": "L28"
     },
     {
-      "id": "src_pages_admin_sponsors_adminsponsors",
-      "label": "AdminSponsors()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "admin/Expenses.jsx",
-      "file_type": "code",
-      "norm_label": "adminsponsors()",
-      "source_file": "src/pages/admin/Sponsors.jsx",
-      "source_location": "L20"
-    },
-    {
-      "id": "src_pages_admin_sponsors_adminsponsors_confirmdelete",
-      "label": "confirmDelete()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "admin/Expenses.jsx",
-      "file_type": "code",
-      "norm_label": "confirmdelete()",
-      "source_file": "src/pages/admin/Sponsors.jsx",
-      "source_location": "L63"
-    },
-    {
-      "id": "src_pages_admin_sponsors_adminsponsors_handlesubmit",
-      "label": "handleSubmit()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "admin/Expenses.jsx",
-      "file_type": "code",
-      "norm_label": "handlesubmit()",
-      "source_file": "src/pages/admin/Sponsors.jsx",
-      "source_location": "L44"
-    },
-    {
-      "id": "src_pages_admin_sponsors_adminsponsors_load",
-      "label": "load()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "admin/Expenses.jsx",
-      "file_type": "code",
-      "norm_label": "load()",
-      "source_file": "src/pages/admin/Sponsors.jsx",
-      "source_location": "L29"
-    },
-    {
       "id": "src_services_expenses_deleteexpense",
       "label": "deleteExpense()",
       "_callable": true,
@@ -751,12 +703,60 @@
       "source_location": "L23"
     },
     {
+      "id": "src_pages_admin_sponsors_adminsponsors",
+      "label": "AdminSponsors()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "admin/Sponsors.jsx",
+      "file_type": "code",
+      "norm_label": "adminsponsors()",
+      "source_file": "src/pages/admin/Sponsors.jsx",
+      "source_location": "L20"
+    },
+    {
+      "id": "src_pages_admin_sponsors_adminsponsors_confirmdelete",
+      "label": "confirmDelete()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "admin/Sponsors.jsx",
+      "file_type": "code",
+      "norm_label": "confirmdelete()",
+      "source_file": "src/pages/admin/Sponsors.jsx",
+      "source_location": "L63"
+    },
+    {
+      "id": "src_pages_admin_sponsors_adminsponsors_handlesubmit",
+      "label": "handleSubmit()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "admin/Sponsors.jsx",
+      "file_type": "code",
+      "norm_label": "handlesubmit()",
+      "source_file": "src/pages/admin/Sponsors.jsx",
+      "source_location": "L44"
+    },
+    {
+      "id": "src_pages_admin_sponsors_adminsponsors_load",
+      "label": "load()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "admin/Sponsors.jsx",
+      "file_type": "code",
+      "norm_label": "load()",
+      "source_file": "src/pages/admin/Sponsors.jsx",
+      "source_location": "L29"
+    },
+    {
       "id": "src_services_sponsors_deletesponsor",
       "label": "deleteSponsor()",
       "_callable": true,
       "_origin": "ast",
-      "community": 3,
-      "community_name": "admin/Expenses.jsx",
+      "community": 46,
+      "community_name": "admin/Sponsors.jsx",
       "file_type": "code",
       "norm_label": "deletesponsor()",
       "source_file": "src/services/sponsors.js",
@@ -767,8 +767,8 @@
       "label": "listSponsors()",
       "_callable": true,
       "_origin": "ast",
-      "community": 3,
-      "community_name": "admin/Expenses.jsx",
+      "community": 46,
+      "community_name": "admin/Sponsors.jsx",
       "file_type": "code",
       "norm_label": "listsponsors()",
       "source_file": "src/services/sponsors.js",
@@ -779,8 +779,8 @@
       "label": "listSponsorsByDate()",
       "_callable": true,
       "_origin": "ast",
-      "community": 3,
-      "community_name": "admin/Expenses.jsx",
+      "community": 46,
+      "community_name": "admin/Sponsors.jsx",
       "file_type": "code",
       "norm_label": "listsponsorsbydate()",
       "source_file": "src/services/sponsors.js",
@@ -791,8 +791,8 @@
       "label": "saveSponsor()",
       "_callable": true,
       "_origin": "ast",
-      "community": 3,
-      "community_name": "admin/Expenses.jsx",
+      "community": 46,
+      "community_name": "admin/Sponsors.jsx",
       "file_type": "code",
       "norm_label": "savesponsor()",
       "source_file": "src/services/sponsors.js",
@@ -803,12 +803,96 @@
       "label": "parseAmount()",
       "_callable": true,
       "_origin": "ast",
-      "community": 3,
-      "community_name": "admin/Expenses.jsx",
+      "community": 46,
+      "community_name": "admin/Sponsors.jsx",
       "file_type": "code",
       "norm_label": "parseamount()",
       "source_file": "src/utils/format.js",
       "source_location": "L35"
+    },
+    {
+      "id": "src_components_installbanner_installbanner",
+      "label": "InstallBanner()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 47,
+      "community_name": "InstallBanner",
+      "file_type": "code",
+      "norm_label": "installbanner()",
+      "source_file": "src/components/InstallBanner.jsx",
+      "source_location": "L28"
+    },
+    {
+      "id": "src_components_installbanner_installbanner_dismiss",
+      "label": "dismiss()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 47,
+      "community_name": "InstallBanner",
+      "file_type": "code",
+      "norm_label": "dismiss()",
+      "source_file": "src/components/InstallBanner.jsx",
+      "source_location": "L49"
+    },
+    {
+      "id": "src_components_installbanner_installbanner_handleinstall",
+      "label": "handleInstall()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 47,
+      "community_name": "InstallBanner",
+      "file_type": "code",
+      "norm_label": "handleinstall()",
+      "source_file": "src/components/InstallBanner.jsx",
+      "source_location": "L54"
+    },
+    {
+      "id": "src_components_installbanner_installbanner_onbeforeinstall",
+      "label": "onBeforeInstall()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 47,
+      "community_name": "InstallBanner",
+      "file_type": "code",
+      "norm_label": "onbeforeinstall()",
+      "source_file": "src/components/InstallBanner.jsx",
+      "source_location": "L39"
+    },
+    {
+      "id": "src_components_installbanner_isios",
+      "label": "isIos()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 47,
+      "community_name": "InstallBanner",
+      "file_type": "code",
+      "norm_label": "isios()",
+      "source_file": "src/components/InstallBanner.jsx",
+      "source_location": "L14"
+    },
+    {
+      "id": "src_components_installbanner_isstandalone",
+      "label": "isStandalone()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 47,
+      "community_name": "InstallBanner",
+      "file_type": "code",
+      "norm_label": "isstandalone()",
+      "source_file": "src/components/InstallBanner.jsx",
+      "source_location": "L7"
+    },
+    {
+      "id": "src_components_installbanner_wasdismissedrecently",
+      "label": "wasDismissedRecently()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 47,
+      "community_name": "InstallBanner",
+      "file_type": "code",
+      "norm_label": "wasdismissedrecently()",
+      "source_file": "src/components/InstallBanner.jsx",
+      "source_location": "L19"
     },
     {
       "id": "src_pages_admin_calendar_admincalendar",
@@ -1090,7 +1174,7 @@
       "file_type": "code",
       "norm_label": "links",
       "source_file": "src/layouts/AdminLayout.jsx",
-      "source_location": "L13"
+      "source_location": "L14"
     },
     {
       "id": "src_layouts_authlayout",
@@ -1123,7 +1207,7 @@
       "file_type": "code",
       "norm_label": "links",
       "source_file": "src/layouts/PlayerLayout.jsx",
-      "source_location": "L5"
+      "source_location": "L6"
     },
     {
       "id": "src_pages_auth_login",
@@ -1346,6 +1430,17 @@
       "source_location": "L27"
     },
     {
+      "id": "package_devdependencies_vite_plugin_pwa",
+      "label": "vite-plugin-pwa",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "vite-plugin-pwa",
+      "source_file": "package.json",
+      "source_location": "L28"
+    },
+    {
       "id": "package_devdependencies_vitejs_plugin_react",
       "label": "@vitejs/plugin-react",
       "_origin": "ast",
@@ -1566,6 +1661,17 @@
       "source_location": "L27"
     },
     {
+      "id": "ref_vite_plugin_pwa",
+      "label": "vite-plugin-pwa",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "package.json",
+      "file_type": "concept",
+      "norm_label": "vite-plugin-pwa",
+      "source_file": "package.json",
+      "source_location": "L28"
+    },
+    {
       "id": "ref_vitejs_plugin_react",
       "label": "@vitejs/plugin-react",
       "_origin": "ast",
@@ -1581,7 +1687,7 @@
       "label": "README.md",
       "_origin": "ast",
       "community": 10,
-      "community_name": "Village Volleyball Ground Management System",
+      "community_name": "Malwanahinna Volleyball Ground Maintenance System",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "readme.md",
@@ -1593,72 +1699,84 @@
       "label": "Financial rules",
       "_origin": "ast",
       "community": 10,
-      "community_name": "Village Volleyball Ground Management System",
+      "community_name": "Malwanahinna Volleyball Ground Maintenance System",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "financial rules",
       "source_file": "README.md",
-      "source_location": "L37"
+      "source_location": "L44"
     },
     {
       "id": "readme_first_admin",
       "label": "First admin",
       "_origin": "ast",
       "community": 10,
-      "community_name": "Village Volleyball Ground Management System",
+      "community_name": "Malwanahinna Volleyball Ground Maintenance System",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "first admin",
       "source_file": "README.md",
-      "source_location": "L25"
+      "source_location": "L32"
     },
     {
       "id": "readme_login_model",
       "label": "Login model",
       "_origin": "ast",
       "community": 10,
-      "community_name": "Village Volleyball Ground Management System",
+      "community_name": "Malwanahinna Volleyball Ground Maintenance System",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "login model",
       "source_file": "README.md",
-      "source_location": "L33"
+      "source_location": "L40"
+    },
+    {
+      "id": "readme_malwanahinna_volleyball_ground_maintenance_system",
+      "label": "Malwanahinna Volleyball Ground Maintenance System",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "Malwanahinna Volleyball Ground Maintenance System",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "malwanahinna volleyball ground maintenance system",
+      "source_file": "README.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "readme_pwa_install",
+      "label": "PWA install",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "Malwanahinna Volleyball Ground Maintenance System",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "pwa install",
+      "source_file": "README.md",
+      "source_location": "L26"
     },
     {
       "id": "readme_setup",
       "label": "Setup",
       "_origin": "ast",
       "community": 10,
-      "community_name": "Village Volleyball Ground Management System",
+      "community_name": "Malwanahinna Volleyball Ground Maintenance System",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "setup",
       "source_file": "README.md",
-      "source_location": "L11"
+      "source_location": "L12"
     },
     {
       "id": "readme_stack",
       "label": "Stack",
       "_origin": "ast",
       "community": 10,
-      "community_name": "Village Volleyball Ground Management System",
+      "community_name": "Malwanahinna Volleyball Ground Maintenance System",
       "file_type": "document",
       "node_kind": "heading",
       "norm_label": "stack",
       "source_file": "README.md",
       "source_location": "L5"
-    },
-    {
-      "id": "readme_village_volleyball_ground_management_system",
-      "label": "Village Volleyball Ground Management System",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "Village Volleyball Ground Management System",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "village volleyball ground management system",
-      "source_file": "README.md",
-      "source_location": "L1"
     },
     {
       "id": "agents_skills_supabase_postgres_best_practices_skill",
@@ -1738,22 +1856,11 @@
       "source_location": "L17"
     },
     {
-      "id": "src_pages_admin_players",
-      "label": "Players.jsx",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "Players.jsx",
-      "file_type": "code",
-      "norm_label": "players.jsx",
-      "source_file": "src/pages/admin/Players.jsx",
-      "source_location": "L1"
-    },
-    {
       "id": "src_services_players",
       "label": "players.js",
       "_origin": "ast",
       "community": 12,
-      "community_name": "Players.jsx",
+      "community_name": "AdminPlayers",
       "file_type": "code",
       "norm_label": "players.js",
       "source_file": "src/services/players.js",
@@ -2077,6 +2184,17 @@
       "file_type": "code",
       "norm_label": "admin/dashboard.jsx",
       "source_file": "src/pages/admin/Dashboard.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_pages_admin_players",
+      "label": "Players.jsx",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "LoadingSpinner",
+      "file_type": "code",
+      "norm_label": "players.jsx",
+      "source_file": "src/pages/admin/Players.jsx",
       "source_location": "L1"
     },
     {
@@ -2490,28 +2608,6 @@
       "source_location": "L11"
     },
     {
-      "id": "src_pages_admin_sponsors",
-      "label": "admin/Sponsors.jsx",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "admin/Expenses.jsx",
-      "file_type": "code",
-      "norm_label": "admin/sponsors.jsx",
-      "source_file": "src/pages/admin/Sponsors.jsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_pages_admin_sponsors_emptyform",
-      "label": "emptyForm",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "admin/Expenses.jsx",
-      "file_type": "code",
-      "norm_label": "emptyform",
-      "source_file": "src/pages/admin/Sponsors.jsx",
-      "source_location": "L11"
-    },
-    {
       "id": "src_services_expenses",
       "label": "expenses.js",
       "_origin": "ast",
@@ -2520,17 +2616,6 @@
       "file_type": "code",
       "norm_label": "expenses.js",
       "source_file": "src/services/expenses.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "src_services_sponsors",
-      "label": "sponsors.js",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "admin/Expenses.jsx",
-      "file_type": "code",
-      "norm_label": "sponsors.js",
-      "source_file": "src/services/sponsors.js",
       "source_location": "L1"
     },
     {
@@ -3261,6 +3346,50 @@
       },
       "norm_label": "supabase",
       "source_file": ".cursor/mcp.json",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_pages_admin_sponsors",
+      "label": "admin/Sponsors.jsx",
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "admin/Sponsors.jsx",
+      "file_type": "code",
+      "norm_label": "admin/sponsors.jsx",
+      "source_file": "src/pages/admin/Sponsors.jsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_pages_admin_sponsors_emptyform",
+      "label": "emptyForm",
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "admin/Sponsors.jsx",
+      "file_type": "code",
+      "norm_label": "emptyform",
+      "source_file": "src/pages/admin/Sponsors.jsx",
+      "source_location": "L11"
+    },
+    {
+      "id": "src_services_sponsors",
+      "label": "sponsors.js",
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "admin/Sponsors.jsx",
+      "file_type": "code",
+      "norm_label": "sponsors.js",
+      "source_file": "src/services/sponsors.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_components_installbanner",
+      "label": "InstallBanner.jsx",
+      "_origin": "ast",
+      "community": 47,
+      "community_name": "InstallBanner",
+      "file_type": "code",
+      "norm_label": "installbanner.jsx",
+      "source_file": "src/components/InstallBanner.jsx",
       "source_location": "L1"
     },
     {
@@ -4077,6 +4206,28 @@
       "source_location": "L1"
     },
     {
+      "id": "src_assets_logo",
+      "label": "src_assets_logo",
+      "community": 0,
+      "community_name": "App.jsx",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "src_assets_logo",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "ref_virtual_pwa_register",
+      "label": "ref_virtual_pwa_register",
+      "community": 1,
+      "community_name": "package.json",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "ref_virtual_pwa_register",
+      "source_file": "",
+      "type": "external"
+    },
+    {
       "id": "src_index",
       "label": "src_index",
       "community": 1,
@@ -4098,12 +4249,12 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/App.jsx",
-      "source_location": "L23",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
       "source": "src_app_app",
-      "target": "src_layouts_authlayout_authlayout",
+      "target": "src_components_installbanner_installbanner",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4115,6 +4266,18 @@
     },
     {
       "source": "src_app_app",
+      "target": "src_layouts_authlayout_authlayout",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/App.jsx",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app_app",
       "target": "src_components_protectedroute_redirectifauth",
       "relation": "calls",
       "_origin": "ast",
@@ -4122,7 +4285,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/App.jsx",
-      "source_location": "L30",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -4134,7 +4297,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/App.jsx",
-      "source_location": "L31",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -4146,7 +4309,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/App.jsx",
-      "source_location": "L39",
+      "source_location": "L41",
       "weight": 1.0
     },
     {
@@ -4158,7 +4321,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/App.jsx",
-      "source_location": "L46",
+      "source_location": "L48",
       "weight": 1.0
     },
     {
@@ -4170,7 +4333,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/App.jsx",
-      "source_location": "L47",
+      "source_location": "L49",
       "weight": 1.0
     },
     {
@@ -4182,7 +4345,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/App.jsx",
-      "source_location": "L56",
+      "source_location": "L58",
       "weight": 1.0
     },
     {
@@ -4194,7 +4357,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/App.jsx",
-      "source_location": "L57",
+      "source_location": "L59",
       "weight": 1.0
     },
     {
@@ -4206,7 +4369,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/App.jsx",
-      "source_location": "L61",
+      "source_location": "L63",
       "weight": 1.0
     },
     {
@@ -4218,7 +4381,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/App.jsx",
-      "source_location": "L62",
+      "source_location": "L64",
       "weight": 1.0
     },
     {
@@ -4230,7 +4393,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/App.jsx",
-      "source_location": "L63",
+      "source_location": "L65",
       "weight": 1.0
     },
     {
@@ -4242,7 +4405,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/App.jsx",
-      "source_location": "L64",
+      "source_location": "L66",
       "weight": 1.0
     },
     {
@@ -4254,7 +4417,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/App.jsx",
-      "source_location": "L65",
+      "source_location": "L67",
       "weight": 1.0
     },
     {
@@ -4266,7 +4429,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/App.jsx",
-      "source_location": "L66",
+      "source_location": "L68",
       "weight": 1.0
     },
     {
@@ -4278,7 +4441,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/App.jsx",
-      "source_location": "L72",
+      "source_location": "L74",
       "weight": 1.0
     },
     {
@@ -4290,7 +4453,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/App.jsx",
-      "source_location": "L73",
+      "source_location": "L75",
       "weight": 1.0
     },
     {
@@ -4302,7 +4465,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/App.jsx",
-      "source_location": "L77",
+      "source_location": "L79",
       "weight": 1.0
     },
     {
@@ -4314,7 +4477,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/App.jsx",
-      "source_location": "L78",
+      "source_location": "L80",
       "weight": 1.0
     },
     {
@@ -4326,7 +4489,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/App.jsx",
-      "source_location": "L79",
+      "source_location": "L81",
       "weight": 1.0
     },
     {
@@ -4338,7 +4501,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/App.jsx",
-      "source_location": "L80",
+      "source_location": "L82",
       "weight": 1.0
     },
     {
@@ -4375,6 +4538,54 @@
       "context": "call",
       "source_file": "src/components/DaySummaryPanel.jsx",
       "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_installbanner_installbanner",
+      "target": "src_components_installbanner_isstandalone",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/InstallBanner.jsx",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_installbanner_installbanner",
+      "target": "src_components_installbanner_wasdismissedrecently",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/InstallBanner.jsx",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_installbanner_installbanner",
+      "target": "src_components_installbanner_isios",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/InstallBanner.jsx",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_installbanner_installbanner_handleinstall",
+      "target": "src_components_installbanner_installbanner_dismiss",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/components/InstallBanner.jsx",
+      "source_location": "L59",
       "weight": 1.0
     },
     {
@@ -4554,7 +4765,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/layouts/AdminLayout.jsx",
-      "source_location": "L23",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -4566,7 +4777,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/layouts/PlayerLayout.jsx",
-      "source_location": "L13",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
@@ -4674,7 +4885,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/pages/admin/Collections.jsx",
-      "source_location": "L150",
+      "source_location": "L142",
       "weight": 1.0
     },
     {
@@ -4686,19 +4897,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/pages/admin/Collections.jsx",
-      "source_location": "L151",
-      "weight": 1.0
-    },
-    {
-      "source": "src_pages_admin_collections_admincollections",
-      "target": "src_components_confirmdialog_confirmdialog",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/pages/admin/Collections.jsx",
-      "source_location": "L182",
+      "source_location": "L145",
       "weight": 1.0
     },
     {
@@ -4711,6 +4910,18 @@
       "context": "call",
       "source_file": "src/pages/admin/Collections.jsx",
       "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_admin_collections_admincollections",
+      "target": "src_components_confirmdialog_confirmdialog",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/pages/admin/Collections.jsx",
+      "source_location": "L218",
       "weight": 1.0
     },
     {
@@ -5046,7 +5257,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/pages/admin/Expenses.jsx",
-      "source_location": "L156",
+      "source_location": "L147",
       "weight": 1.0
     },
     {
@@ -5058,19 +5269,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/pages/admin/Expenses.jsx",
-      "source_location": "L157",
-      "weight": 1.0
-    },
-    {
-      "source": "src_pages_admin_expenses_adminexpenses",
-      "target": "src_components_confirmdialog_confirmdialog",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/pages/admin/Expenses.jsx",
-      "source_location": "L189",
+      "source_location": "L150",
       "weight": 1.0
     },
     {
@@ -5083,6 +5282,18 @@
       "context": "call",
       "source_file": "src/pages/admin/Expenses.jsx",
       "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_admin_expenses_adminexpenses",
+      "target": "src_components_confirmdialog_confirmdialog",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/pages/admin/Expenses.jsx",
+      "source_location": "L227",
       "weight": 1.0
     },
     {
@@ -5370,7 +5581,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/pages/admin/Sponsors.jsx",
-      "source_location": "L168",
+      "source_location": "L158",
       "weight": 1.0
     },
     {
@@ -5382,19 +5593,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/pages/admin/Sponsors.jsx",
-      "source_location": "L169",
-      "weight": 1.0
-    },
-    {
-      "source": "src_pages_admin_sponsors_adminsponsors",
-      "target": "src_components_confirmdialog_confirmdialog",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/pages/admin/Sponsors.jsx",
-      "source_location": "L202",
+      "source_location": "L161",
       "weight": 1.0
     },
     {
@@ -5407,6 +5606,18 @@
       "context": "call",
       "source_file": "src/pages/admin/Sponsors.jsx",
       "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "src_pages_admin_sponsors_adminsponsors",
+      "target": "src_components_confirmdialog_confirmdialog",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/pages/admin/Sponsors.jsx",
+      "source_location": "L242",
       "weight": 1.0
     },
     {
@@ -5778,7 +5989,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/pages/player/Expenses.jsx",
-      "source_location": "L44",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -5790,7 +6001,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/pages/player/Expenses.jsx",
-      "source_location": "L45",
+      "source_location": "L39",
       "weight": 1.0
     },
     {
@@ -5850,7 +6061,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/pages/player/Sponsors.jsx",
-      "source_location": "L46",
+      "source_location": "L37",
       "weight": 1.0
     },
     {
@@ -5862,7 +6073,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/pages/player/Sponsors.jsx",
-      "source_location": "L47",
+      "source_location": "L40",
       "weight": 1.0
     },
     {
@@ -6274,8 +6485,20 @@
       "weight": 1.0
     },
     {
+      "source": "package",
+      "target": "ref_vite_plugin_pwa",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
       "source": "src_app",
-      "target": "src_pages_admin_dashboard_admindashboard",
+      "target": "src_pages_auth_pendingapproval_pendingapproval",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6287,7 +6510,7 @@
     },
     {
       "source": "src_app",
-      "target": "src_pages_admin_collections_admincollections",
+      "target": "src_pages_admin_dashboard_admindashboard",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6299,7 +6522,7 @@
     },
     {
       "source": "src_app",
-      "target": "src_pages_admin_calendar_admincalendar",
+      "target": "src_pages_admin_collections_admincollections",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6311,7 +6534,7 @@
     },
     {
       "source": "src_app",
-      "target": "src_pages_admin_expenses_adminexpenses",
+      "target": "src_pages_admin_calendar_admincalendar",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6323,7 +6546,7 @@
     },
     {
       "source": "src_app",
-      "target": "src_pages_admin_sponsors_adminsponsors",
+      "target": "src_pages_admin_expenses_adminexpenses",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6335,7 +6558,7 @@
     },
     {
       "source": "src_app",
-      "target": "src_pages_admin_players_adminplayers",
+      "target": "src_pages_admin_sponsors_adminsponsors",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6347,7 +6570,7 @@
     },
     {
       "source": "src_app",
-      "target": "src_pages_player_dashboard_playerdashboard",
+      "target": "src_pages_admin_players_adminplayers",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6359,7 +6582,7 @@
     },
     {
       "source": "src_app",
-      "target": "src_pages_player_calendar_playercalendar",
+      "target": "src_pages_player_dashboard_playerdashboard",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6371,7 +6594,7 @@
     },
     {
       "source": "src_app",
-      "target": "src_pages_player_expenses_playerexpenses",
+      "target": "src_pages_player_calendar_playercalendar",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6383,7 +6606,7 @@
     },
     {
       "source": "src_app",
-      "target": "src_pages_player_sponsors_playersponsors",
+      "target": "src_pages_player_expenses_playerexpenses",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6403,6 +6626,18 @@
       "context": "import",
       "source_file": "src/App.jsx",
       "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app",
+      "target": "src_pages_player_sponsors_playersponsors",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/App.jsx",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -6455,7 +6690,7 @@
     },
     {
       "source": "src_app",
-      "target": "src_layouts_authlayout_authlayout",
+      "target": "src_components_installbanner_installbanner",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6467,7 +6702,7 @@
     },
     {
       "source": "src_app",
-      "target": "src_layouts_adminlayout_adminlayout",
+      "target": "src_layouts_authlayout_authlayout",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6479,7 +6714,7 @@
     },
     {
       "source": "src_app",
-      "target": "src_layouts_playerlayout_playerlayout",
+      "target": "src_layouts_adminlayout_adminlayout",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6491,7 +6726,7 @@
     },
     {
       "source": "src_app",
-      "target": "src_pages_auth_login_login",
+      "target": "src_layouts_playerlayout_playerlayout",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6503,7 +6738,7 @@
     },
     {
       "source": "src_app",
-      "target": "src_pages_auth_register_register",
+      "target": "src_pages_auth_login_login",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6515,7 +6750,7 @@
     },
     {
       "source": "src_app",
-      "target": "src_pages_auth_pendingapproval_pendingapproval",
+      "target": "src_pages_auth_register_register",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -6678,7 +6913,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/main.jsx",
-      "source_location": "L4",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -7811,7 +8046,7 @@
     },
     {
       "source": "src_app",
-      "target": "src_pages_admin_dashboard",
+      "target": "src_pages_auth_pendingapproval",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7823,7 +8058,7 @@
     },
     {
       "source": "src_app",
-      "target": "src_pages_admin_collections",
+      "target": "src_pages_admin_dashboard",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7835,7 +8070,7 @@
     },
     {
       "source": "src_app",
-      "target": "src_pages_admin_calendar",
+      "target": "src_pages_admin_collections",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7847,7 +8082,7 @@
     },
     {
       "source": "src_app",
-      "target": "src_pages_admin_expenses",
+      "target": "src_pages_admin_calendar",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7859,7 +8094,7 @@
     },
     {
       "source": "src_app",
-      "target": "src_pages_admin_sponsors",
+      "target": "src_pages_admin_expenses",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7871,7 +8106,7 @@
     },
     {
       "source": "src_app",
-      "target": "src_pages_admin_players",
+      "target": "src_pages_admin_sponsors",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7883,7 +8118,7 @@
     },
     {
       "source": "src_app",
-      "target": "src_pages_player_dashboard",
+      "target": "src_pages_admin_players",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7895,7 +8130,7 @@
     },
     {
       "source": "src_app",
-      "target": "src_pages_player_calendar",
+      "target": "src_pages_player_dashboard",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7907,7 +8142,7 @@
     },
     {
       "source": "src_app",
-      "target": "src_pages_player_expenses",
+      "target": "src_pages_player_calendar",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7919,7 +8154,7 @@
     },
     {
       "source": "src_app",
-      "target": "src_pages_player_sponsors",
+      "target": "src_pages_player_expenses",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7943,6 +8178,18 @@
     },
     {
       "source": "src_app",
+      "target": "src_pages_player_sponsors",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/App.jsx",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "src_app",
       "target": "src_components_protectedroute",
       "relation": "imports_from",
       "_origin": "ast",
@@ -7955,7 +8202,7 @@
     },
     {
       "source": "src_app",
-      "target": "src_layouts_authlayout",
+      "target": "src_components_installbanner",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7967,7 +8214,7 @@
     },
     {
       "source": "src_app",
-      "target": "src_layouts_adminlayout",
+      "target": "src_layouts_authlayout",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7979,7 +8226,7 @@
     },
     {
       "source": "src_app",
-      "target": "src_layouts_playerlayout",
+      "target": "src_layouts_adminlayout",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -7991,7 +8238,7 @@
     },
     {
       "source": "src_app",
-      "target": "src_pages_auth_login",
+      "target": "src_layouts_playerlayout",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -8003,7 +8250,7 @@
     },
     {
       "source": "src_app",
-      "target": "src_pages_auth_register",
+      "target": "src_pages_auth_login",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -8015,7 +8262,7 @@
     },
     {
       "source": "src_app",
-      "target": "src_pages_auth_pendingapproval",
+      "target": "src_pages_auth_register",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -8059,6 +8306,30 @@
       "context": "import",
       "source_file": "src/components/DaySummaryPanel.jsx",
       "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_installbanner",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/InstallBanner.jsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_installbanner",
+      "target": "ref_lucide_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/components/InstallBanner.jsx",
+      "source_location": "L2",
       "weight": 1.0
     },
     {
@@ -8183,6 +8454,18 @@
     },
     {
       "source": "src_layouts_adminlayout",
+      "target": "src_assets_logo",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/layouts/AdminLayout.jsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "src_layouts_adminlayout",
       "target": "ref_lucide_react",
       "relation": "imports_from",
       "_origin": "ast",
@@ -8203,6 +8486,18 @@
       "context": "import",
       "source_file": "src/layouts/AuthLayout.jsx",
       "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_layouts_authlayout",
+      "target": "src_assets_logo",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/layouts/AuthLayout.jsx",
+      "source_location": "L2",
       "weight": 1.0
     },
     {
@@ -8239,6 +8534,18 @@
       "context": "import",
       "source_file": "src/layouts/PlayerLayout.jsx",
       "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "src_layouts_playerlayout",
+      "target": "src_assets_logo",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/layouts/PlayerLayout.jsx",
+      "source_location": "L4",
       "weight": 1.0
     },
     {
@@ -8279,7 +8586,7 @@
     },
     {
       "source": "src_main",
-      "target": "src_index",
+      "target": "ref_virtual_pwa_register",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -8291,7 +8598,7 @@
     },
     {
       "source": "src_main",
-      "target": "src_app",
+      "target": "src_index",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -8299,6 +8606,18 @@
       "context": "import",
       "source_file": "src/main.jsx",
       "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "src_main",
+      "target": "src_app",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/main.jsx",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -9427,6 +9746,18 @@
       "context": "import",
       "source_file": "vite.config.js",
       "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "vite_config",
+      "target": "ref_vite_plugin_pwa",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "vite.config.js",
+      "source_location": "L4",
       "weight": 1.0
     },
     {
@@ -10893,6 +11224,17 @@
       "weight": 1.0
     },
     {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_vite_plugin_pwa",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
       "source": "package_scripts",
       "target": "package_scripts_preview",
       "relation": "contains",
@@ -10938,7 +11280,7 @@
     },
     {
       "source": "readme",
-      "target": "readme_village_volleyball_ground_management_system",
+      "target": "readme_malwanahinna_volleyball_ground_maintenance_system",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -10948,51 +11290,62 @@
       "weight": 1.0
     },
     {
-      "source": "readme_village_volleyball_ground_management_system",
+      "source": "readme_malwanahinna_volleyball_ground_maintenance_system",
       "target": "readme_setup",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L11",
+      "source_location": "L12",
       "weight": 1.0
     },
     {
-      "source": "readme_village_volleyball_ground_management_system",
+      "source": "readme_malwanahinna_volleyball_ground_maintenance_system",
+      "target": "readme_pwa_install",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_malwanahinna_volleyball_ground_maintenance_system",
       "target": "readme_first_admin",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L25",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
-      "source": "readme_village_volleyball_ground_management_system",
+      "source": "readme_malwanahinna_volleyball_ground_maintenance_system",
       "target": "readme_login_model",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L33",
+      "source_location": "L40",
       "weight": 1.0
     },
     {
-      "source": "readme_village_volleyball_ground_management_system",
+      "source": "readme_malwanahinna_volleyball_ground_maintenance_system",
       "target": "readme_financial_rules",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L37",
+      "source_location": "L44",
       "weight": 1.0
     },
     {
-      "source": "readme_village_volleyball_ground_management_system",
+      "source": "readme_malwanahinna_volleyball_ground_maintenance_system",
       "target": "readme_stack",
       "relation": "contains",
       "_origin": "ast",
@@ -11010,7 +11363,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/App.jsx",
-      "source_location": "L21",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
@@ -11044,6 +11397,72 @@
       "confidence_score": 1.0,
       "source_file": "src/components/EmptyState.jsx",
       "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_installbanner",
+      "target": "src_components_installbanner_isios",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/InstallBanner.jsx",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_installbanner",
+      "target": "src_components_installbanner_wasdismissedrecently",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/InstallBanner.jsx",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_installbanner",
+      "target": "src_components_installbanner_installbanner",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/InstallBanner.jsx",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_installbanner",
+      "target": "src_components_installbanner_isstandalone",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/InstallBanner.jsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_installbanner_installbanner",
+      "target": "src_components_installbanner_installbanner_dismiss",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/InstallBanner.jsx",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "src_components_installbanner_installbanner",
+      "target": "src_components_installbanner_installbanner_handleinstall",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/InstallBanner.jsx",
+      "source_location": "L54",
       "weight": 1.0
     },
     {
@@ -11197,7 +11616,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/layouts/AdminLayout.jsx",
-      "source_location": "L13",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
@@ -11208,7 +11627,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/layouts/AdminLayout.jsx",
-      "source_location": "L22",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -11219,7 +11638,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/layouts/AdminLayout.jsx",
-      "source_location": "L26",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -11230,7 +11649,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/layouts/AuthLayout.jsx",
-      "source_location": "L3",
+      "source_location": "L4",
       "weight": 1.0
     },
     {
@@ -11241,7 +11660,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/layouts/PlayerLayout.jsx",
-      "source_location": "L12",
+      "source_location": "L13",
       "weight": 1.0
     },
     {
@@ -11252,7 +11671,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/layouts/PlayerLayout.jsx",
-      "source_location": "L5",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -11263,7 +11682,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/layouts/PlayerLayout.jsx",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -11980,8 +12399,20 @@
       "source_file": ".agents/skills/supabase/SKILL.md",
       "source_location": "L154",
       "weight": 1.0
+    },
+    {
+      "source": "src_components_installbanner_installbanner",
+      "target": "src_components_installbanner_installbanner_onbeforeinstall",
+      "relation": "indirect_call",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "context": "argument",
+      "source_file": "src/components/InstallBanner.jsx",
+      "source_location": "L45",
+      "weight": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "568315c15979147c9e905fb5f046b4b67fff0571"
+  "built_at_commit": "cd7c622fd0e9ab40c6fe1989fb9e5d2bf512e0d2"
 }

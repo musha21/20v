@@ -1,5 +1,4 @@
 import { Outlet } from 'react-router-dom'
-import logo from '../assets/logo.png'
 
 export default function AuthLayout() {
   return (
@@ -12,8 +11,11 @@ export default function AuthLayout() {
       <div className="relative mx-auto flex min-h-[calc(100vh-4rem)] max-w-md flex-col justify-center">
         <div className="mb-6 text-center">
           <img
-            src={logo}
+            src="/logo.png"
             alt="Malwanahinna Volleyball Ground"
+            width={96}
+            height={96}
+            decoding="async"
             className="mx-auto mb-4 h-24 w-24 rounded-2xl object-cover shadow-lg shadow-pitch-700/25 ring-2 ring-pitch-100"
           />
           <h1 className="font-display text-2xl font-bold leading-tight text-pitch-900 sm:text-3xl">
